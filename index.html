@@ -6,6 +6,10 @@
 -->
 <html>
 	<head>
+		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+			crossorigin="anonymous">
+
 		<title>Henry Nguyen</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -19,18 +23,22 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<h1><a href="index.html">Henry Nguyen</a></h1>
+						<h1>
+							<a href="#banner" class='more scrolly'>Henry Nguyen</a>
+						</h1>
 						<nav id="nav">
 							<ul>
 								<li class="special">
 									<a href="#menu" class="menuToggle"><span>Menu</span></a>
 									<div id="menu">
 										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="generic.html">Generic</a></li>
-											<li><a href="elements.html">Elements</a></li>
-											<li><a href="#">Sign Up</a></li>
-											<li><a href="#">Log In</a></li>
+											<li><a href="#banner" class='more scrolly'>Home</a></li>
+											<li><a href="#one" class='more scrolly'>Skills</a></li>
+											<li>
+												<a href="#two" class='more scrolly'>Accomplishments</a>
+											</li>
+											<li><a href="#three" class='more scrolly'>Hobbies & Interests</a></li>
+											<li><a href="#footer" class='more scrolly'>Contact</a></li>
 										</ul>
 									</div>
 								</li>
@@ -46,7 +54,7 @@
 								<br />
 							 </p>
 							<ul class="actions special">
-								<li><a href="#" class="button primary">See more</a></li>
+								<li><a href="#footer" class="button primary scrolly">Contact</a></li>
 							</ul>
 						</div>
 						<a href="#one" class="more scrolly">Learn More</a>
@@ -56,24 +64,47 @@
 					<section id="one" class="wrapper style1 special">
 						<div class="inner">
 							<header class="major">
-								<h2>Current Skills<br />
-								Many more on its way</h2>
-								<p>PostgreSQL, Ruby, Ruby on Rails, JavaScript, React, Redux, MongoDB, ExpressJS, Node.js<br />
-								</p>
+								<h2>Skills<br />
+								</h2>
+								<!-- <p>PostgreSQL, Ruby, Ruby on Rails, JavaScript, React, Redux, MongoDB, ExpressJS, Node.js<br />
+								</p> -->
 							</header>
-							<ul class="icons major">
-								<li><span class="icon fa-diamond major style1"><span class="label">Lorem</span></span></li>
+							<div class='skills-container'>
+								<div class='skills-grid'>
+									<i class="devicon-postgresql-plain-wordmark skill-icon"></i>
+									<i class="devicon-ruby-plain-wordmark skill-icon"></i>
+									<i class="devicon-rails-plain-wordmark skill-icon"></i>
+									<i class="devicon-javascript-plain skill-icon"></i>
+									<i class="devicon-react-original-wordmark skill-icon"></i>
+									<i class="devicon-mongodb-plain-wordmark skill-icon"></i>
+									<i class="devicon-express-original-wordmark skill-icon"></i>
+									<i class="devicon-jquery-plain-wordmark skill-icon"></i>
+									<i class="devicon-git-plain-wordmark skill-icon"></i>
+									<i class="devicon-css3-plain-wordmark skill-icon"></i>
+									<i class="devicon-heroku-plain-wordmark skill-icon"></i>
+								</div>
+
+
+
+							</div>
+	
+							<!-- <ul class="icons major"> -->
+								<!-- <li><span class="icon fa-diamond major style1"><span class="label">Lorem</span></span></li>
 								<li><span class="icon fa-heart-o major style2"><span class="label">Ipsum</span></span></li>
-								<li><span class="icon fa-code major style3"><span class="label">Dolor</span></span></li>
-							</ul>
+								<li><span class="icon fa-code major style3"><span class="label">Dolor</span></span></li> -->
+							<!-- </ul> -->
 						</div>
 					</section>
 
 				<!-- Two -->
 					<section id="two" class="wrapper alt style2">
 						<section class="spotlight">
-							<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
-								<h2>EventsNow<br />
+							<div class="image">
+								<img src="https://raw.githubusercontent.com/Nenry/EventsNow/master/Wireframes/images/eventsnow_homepage.png" alt="" />
+							</div>
+							<div class="content">
+							<h2>
+								<a href="https://eventsnow.herokuapp.com/#/">EventsNow</a>
 							</h2>
 								<p>A fullstack web application I created with many features. Some features include event management with ticketing capabilities. 
 									This application allows users to attend and host local events.
@@ -82,8 +113,13 @@
 							</div>
 						</section>
 						<section class="spotlight">
-							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
-								<h2>Tetris<br />
+							<div class="image">
+								<img src="https://github.com/Nenry/Tetris/blob/master/screenshots/gameplay.png?raw=true" alt="" />
+							</div>
+							<div class="content">
+							
+								<h2>
+									<a href="https://nenry.github.io/Tetris/">Tetris</a>
 								</h2>
 								<p>Everybody has played tetris. It may not be the video game, but you had to definitely play it while packing your car or your luggage!
 									I was able to recreate this classic game using just JavaScript and Canvas. Implementation of fast drop, next piece, and 
@@ -92,13 +128,20 @@
 							</div>
 						</section>
 						<section class="spotlight">
-							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
-								<h2>Yelp on Slack<br />
+						<div class="image">
+							<img src="https://i.imgur.com/Tl93xIJ.gif" alt="" />
+						</div>
+						<div class="content">
+								
+								<h2>
+									<a href="https://yelponslack.herokuapp.com/">Yelp on Slack</a>
 								</h2>
 								<div>Person 1: "What should we eat today?"</div>
 								<div>Person 2: "I don't know, you choose"</div>
-								<div>Person 1: "No you choose"</div>
-								<p>This cycle would continue for another 30 minutes until a mediocre restaurant was chosen</p>
+								<p>Person 1: "No you choose"</p>
+								<p>
+									<i>This cycle would continue until the fallback option was chosen</i>
+								</p>
 								<p>The solution has arrived. The ever popular Slack has received its greatest extension, which is Yelp on Slack!
 									My team and I was able to develop an extension that will expedite the decision making with great restaurants.
 
@@ -112,51 +155,61 @@
 						<div class="inner">
 							<header class="major">
 								<h2>Hobbies & Interest</h2>
-								<p><br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+								<!-- <p><br />
+								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p> -->
 							</header>
 							<ul class="features">
 								<li class="icon fa-paper-plane-o">
-									<h3>Technology</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+									<h3>Fishing</h3>
+									<p>Enjoying the beauty of nature then an adrenaline rush hits when that fish bites!</p>
 								</li>
 								<li class="icon fa-laptop">
-									<h3>Snowboarder</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+									<h3>Snowboarding</h3>
+									<p>Non-stop excitement when carving my own path on that fresh pow!</p>
 								</li>
 								<li class="icon fa-code">
 									<h3>Car Enthusiast</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+									<p>One of my greatest passion ever since I could drive. This was the hobby that caused me to want to learn about how technology works.</p>
 								</li>
 								<li class="icon fa-headphones">
-									<h3>Subaru Ambassador</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+									<h3>Music</h3>
+									<p>Not a day goes for me without listening to music. Music always makes things better</p>
 								</li>
-								<li class="icon fa-heart-o">
+								<!-- <li class="icon fa-heart-o">
 									<h3>Music</h3>
 									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
 								</li>
 								<li class="icon fa-flag-o">
 									<h3>Fisher</h3>
 									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
+								</li> -->
 							</ul>
 						</div>
 					</section>
 
 				<!-- CTA -->
-					<section id="cta" class="wrapper style4">
-						<div class="inner">
+					<!-- <section id="cta" class="wrapper style4"> -->
+						<!-- <div class="inner">
 							<header>
-								<h2>Arcue ut vel commodo</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
-							</header>
-							<ul class="actions stacked">
+								<h2>How to connect</h2>
+									<a href="mailto:Henryhtnguyen@gmail.com">Henryhtnguyen@gmail.com</a>
+								<div>
+									<a href="https://github.com/nenry">
+										<i class="devicon-github-plain-wordmark skill-icon"></i>
+									</a>
+									<a href="https://www.linkedin.com/in/henryhtnguyen/">
+										<i class="fab fa-linkedin skill-icon"></i>
+
+										<img src="https://res.cloudinary.com/nenry/image/upload/v1530235167/In-White-128px-R.png" alt=""> </a>
+							</div> -->
+		
+							<!-- </header> -->
+							<!-- <ul class="actions stacked">
 								<li><a href="#" class="button fit primary">Activate</a></li>
 								<li><a href="#" class="button fit">Learn More</a></li>
-							</ul>
-						</div>
-					</section>
+							</ul> -->
+						<!-- </div> -->
+					<!-- </section> -->
 
 				<!-- Footer -->
 					<footer id="footer">
@@ -167,9 +220,19 @@
 							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
 							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 						</ul> -->
-						<ul class="copyright">
+						<!-- <ul class="copyright">
 							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
+						</ul> -->
+					<!-- <h2>How to connect</h2> -->
+					<h2><a href="mailto:Henryhtnguyen@gmail.com">Henryhtnguyen@gmail.com</a></h2>
+					<!-- <div>
+						<a href="https://github.com/nenry">
+							<i class="devicon-github-plain-wordmark skill-icon"></i>
+						</a>
+						<a href="https://www.linkedin.com/in/henryhtnguyen/">
+							<i class="fab fa-linkedin skill-icon"></i>
+
+					</div> -->
 					</footer>
 
 			</div>
