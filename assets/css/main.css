@@ -3798,7 +3798,7 @@ input, select, textarea {
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg"); */
-		background-image: url('https://res.cloudinary.com/nenry/image/upload/v1531157745/2johannes-plenio-271335-unsplash.jpg');
+		/* background-image: url('https://res.cloudinary.com/nenry/image/upload/v1531157745/2johannes-plenio-271335-unsplash.jpg'); */
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -3949,9 +3949,9 @@ input, select, textarea {
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg"); */
-		background-image: url('https://res.cloudinary.com/nenry/image/upload/v1531157745/2johannes-plenio-271335-unsplash.jpg');
+		background-image: url('https://res.cloudinary.com/nenry/image/upload/v1531758931/6johannes-plenio-271335-unsplash.jpg');
 		background-attachment: fixed;
-		background-position: center 110%;
+		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
 		padding-top: 0;
@@ -3999,3 +3999,8 @@ input, select, textarea {
 		justify-content: center;
 
 	}
+
+
+	.header-text {
+		/* top:-90px; */
+	};
